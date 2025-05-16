@@ -313,7 +313,7 @@ export default function CampaignDetailPage({ params }: { params: { id: string } 
             <div className="space-y-2">
               <div className="flex justify-between text-sm">
                 <span className="text-gray-600 dark:text-gray-400">Completed</span>
-                <span className="text-gray-900 dark:text-white">{campaign.successCount || 0 + campaign.failureCount || 0} / {campaign.totalContacts || 0}</span>
+                <span className="text-gray-900 dark:text-white">{(campaign.successCount ?? 0) + (campaign.failureCount ?? 0)} / {campaign.totalContacts ?? 0}</span>
               </div>
               <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
                 <div 
