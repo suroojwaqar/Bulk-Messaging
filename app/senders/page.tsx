@@ -313,7 +313,7 @@ export default function SendersPage() {
           <div>
             <h3 className="font-semibold text-blue-800 dark:text-blue-200">WaAPI Integration Updated</h3>
             <p className="text-blue-700 dark:text-blue-300 text-sm mt-1">
-              Now using the official WaAPI endpoint: <code className="bg-blue-100 dark:bg-blue-900 px-1 rounded">POST /instances/{'{'}{'}'}id{'{'}}'}'}/client/action/send-message</code>
+              Now using the official WaAPI endpoint: <code className="bg-blue-100 dark:bg-blue-900 px-1 rounded">POST /instances/{String.raw`{id}`}/client/action/send-message</code>
             </p>
             <p className="text-blue-700 dark:text-blue-300 text-sm mt-1">
               • Phone numbers are automatically formatted as WhatsApp chat IDs (e.g., number@c.us)<br/>
